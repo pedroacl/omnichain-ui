@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loadProduct Saga should dispatch the loadProduct action if the request is successful 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "PUT": Object {
+    "action": Object {
+      "payload": Object {
+        "description": "Test Description 1",
+        "name": "Test Product 1",
+      },
+      "type": undefined,
+    },
+    "channel": null,
+  },
+}
+`;
+
+exports[`loadProduct Saga should dispatch the loadProduct action if the request is successful 2`] = `undefined`;
+
+exports[`loadProducts Saga should dispatch the productsLoaded action if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "PUT": Object {
+    "action": Object {
+      "payload": Array [
+        Object {
+          "description": "Test Product 1 description",
+          "name": "Test Product 1",
+        },
+        Object {
+          "description": "Test Product 2 description",
+          "name": "Test Product 2",
+        },
+      ],
+      "type": "omnichain/Admin/ProductPages/PRODUCTS_LOADED",
+    },
+    "channel": null,
+  },
+}
+`;
+
+exports[`loadProducts Saga should dispatch the productsLoaded action if it requests the data successfully 2`] = `undefined`;
