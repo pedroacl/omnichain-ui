@@ -13,6 +13,7 @@ WORKDIR /app
 # Copy the main application.
 COPY . ./
 
+RUN npm i npm@latest -g
 RUN npm install
 
 # Build and optimize react app
